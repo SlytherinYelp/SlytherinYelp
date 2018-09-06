@@ -36,13 +36,52 @@ body {
 }
 
 .search {
-  display: flex;
+  margin-bottom: 1rem;
 }
 
 .search__form {
-  flex: 1;
+  display: flex;
+  height: 4rem;
 }
 
 .search__input {
-  width: 100%;
+  padding: 0.5rem 1rem;
+  flex-grow: 1;
+  font-size: 2rem;
+}
+
+.search__button {
+  width: 10rem;
+  font-size: 2rem;
+}
+
+.book-page {
+  font-size: 1.6rem;
+  display: grid;
+
+  grid-template-rows: 100vh;
+}
+
+.book-page__title {
+  font-size: 3rem;
+  display: block;
+}
+
+.book-page__subtitle {
+  font-size: 2rem;
+  display: block;
+}
+
+.book-page__header {
+  margin-bottom: 2rem;
+}
+
+.book-page__landing {
+  display: flex;
+  justify-content: center;
+}
+
+.book-page__img {
+  width: auto;
+  height: 100%;
 }

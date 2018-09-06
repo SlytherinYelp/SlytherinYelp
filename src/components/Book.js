@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Book = ({
   title,
@@ -15,9 +16,11 @@ const Book = ({
   handleClickBook
 }) => {
   return (
-    <div className="book" onClick={() => handleClickBook(id)}>
-      {imageLinks && <img src={imageLinks.thumbnail} alt={title} className="book__img" />}
-      <p className="book__title">{title}</p>
+    <div className="book">
+      <Link to={`/book/${id}`}>
+        {imageLinks && <img src={imageLinks.thumbnail} alt={title} className="book__img" />}
+        <p className="book__title">{title}</p>
+      </Link>
     </div>
   );
 };

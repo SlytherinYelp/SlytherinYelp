@@ -11,7 +11,9 @@ const Search = ({ search, handleOnChangeSearch, handleOnClickSearch }) => {
           value={search}
           onChange={handleOnChangeSearch}
         />
-        <button type="submit">Search</button>
+        <button className="search__button" type="submit">
+          Search
+        </button>
       </form>
     </div>
   );
