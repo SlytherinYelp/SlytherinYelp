@@ -26,8 +26,6 @@ class BookPage extends Component {
       title
     } = this.state;
 
-    console.log(imageLinks);
-
     return (
       <div className="book-page">
         <div className="book-page__landing">
