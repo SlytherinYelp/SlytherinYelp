@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Open Sans';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .app {
@@ -58,13 +58,14 @@ body {
 .book-page {
   font-size: 1.6rem;
   display: grid;
-
+  grid-row-gap: 4rem;
   grid-template-rows: 100vh;
 }
 
 .book-page__title {
-  font-size: 3rem;
+  font-size: 4rem;
   display: block;
+  margin-bottom: 2rem;
 }
 
 .book-page__subtitle {
