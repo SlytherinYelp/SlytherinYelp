@@ -34,6 +34,7 @@ class BookPage extends Component {
         <div className="book-page__header">
           <span className="book-page__title">{title}</span>
           <span className="book-page__subtitle">{subtitle}</span>
+          {authors && <span className="book-page__author">{authors.join(', ')}</span>}
         </div>
         <div className="book-page__description" dangerouslySetInnerHTML={{ __html: description }} />
       </div>
